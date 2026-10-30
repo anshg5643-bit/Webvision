@@ -1,0 +1,16 @@
+SETUP (Windows)
+
+GROQ KEY
+1. Create a key at https://console.groq.com/keys (starts with gsk_).
+2. Open groq_api_key.txt in Notepad, paste the key as the only line, Save.
+   (Make sure it is not saved as groq_api_key.txt.txt.)
+3. Restart: python app.py  -> terminal must say "Groq key: found".
+
+GOOGLE SIGN-IN
+1. https://console.cloud.google.com/apis/credentials -> Create credentials -> OAuth client ID -> Web application.
+2. Authorized JavaScript origins: http://localhost:5000   (exactly this; no trailing slash, no path)
+3. Copy the Client ID (123...-abc.apps.googleusercontent.com, NOT the secret) into google_client_id.txt.
+4. Restart and open http://localhost:5000 (not 127.0.0.1). Terminal must say "Google sign-in: ready".
+5. If your OAuth consent screen is in Testing mode, add your Gmail under Test users.
+
+Never share your keys or upload a ZIP containing them.

@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+data/
+openai_api_key.txt
+tavily_api_key.txt
+.env
+
+groq_api_key.txt
+google_client_id.txt
